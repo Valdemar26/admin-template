@@ -1,0 +1,15 @@
+
+/*Gothic*/
+@font-face {
+  font-family: 'Gothic';
+  src: url("../../fonts/century-gothic/Century_Gothic.ttf");
+  /*font-style: normal;*/
+
+  /*font-weight: 400;*/
+  /* Modern Browsers */
+  /*url('./assets/fonts/century-gothic/Century_Gothic.ttf');*/
+  /*format('truetype');*/
+  /*src: local('Gothic'),*/
+    /* Modern Browsers */
+  /*url('./assets/fonts/century-gothic/Century_Gothic.ttf')*/
+}
