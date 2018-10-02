@@ -1,5 +1,15 @@
 .container-fluid {
-  background-color: #B0E4F5;
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  height: 113px;
+}
+.wrapper {
+  width: 1003px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .row {
 
@@ -7,7 +17,66 @@
 .col {
 
 }
+.logo {
+  flex: 1;
+  margin-right: 90px;
+}
+.nav {
+  flex: 3;
+  justify-content: space-between;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*line-height: 55px;*/
+}
+.nav ul li {
+  margin: 0 15px;
+}
+.nav ul li .dropdown {
+  display: none;
+  flex-direction: column;
+  border: 2px solid #112349;
+  position: absolute;
+  top: 112px;
+  transition: 1.6s ease;
+}
+.nav ul li:nth-child(1):hover .dropdown,
+.nav ul li:nth-child(2):hover .dropdown,
+.nav ul li:nth-child(3):hover .dropdown,
+.nav ul li:nth-child(4):hover .dropdown,
+.nav ul li:nth-child(5):hover .dropdown {
+  display: flex;
+}
+
+.nav ul li:nth-child(5) {
+  margin-left: 20px;
+  /*width: 40px;*/
+  /*height: 40px;*/
+}
 img {
-  max-width: 50px;
-  height: auto;
+  /*max-width: 50px;*/
+  /*height: auto;*/
+}
+a:hover {
+  text-decoration: none;
+}
+a.bl .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #112349;
+  border: 1px solid #112349;
+  border-radius: 50%;
+}
+select#chose option[value="gilt"] {
+  background-image:url(../../assets/images/gilt_logo.svg);
 }
