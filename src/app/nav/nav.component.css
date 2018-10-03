@@ -43,7 +43,7 @@
   margin-bottom: 20px;
 }
 .nav ul li ul li a:hover {
-  color: #ffe065;;
+  color: #ffe065;
   /*border-left: 5px solid #ffc107;*/
   height: 15px;
   border-left: 5px solid #ffe065;
@@ -60,7 +60,6 @@
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
-
 }
 .nav ul li .dropdown:before {
   content: "\A";
@@ -119,6 +118,42 @@ a.bl .profile {
   border: 1px solid #112349;
   border-radius: 50%;
 }
-select#chose option[value="gilt"] {
-  background-image:url(../../assets/images/gilt_logo.svg);
+
+/* ng-select styles */
+ng-select {
+  width: 200px;
+  border: 1px solid #112349;
+  border-radius: 10px;
+}
+
+ng-select::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-selected {
+  background-color: #fff;
+  color: #112349;
+}
+
+ng-select::ng-deep .ng-dropdown-panel .ng-dropdown-panel-items .ng-option.ng-option-marked {
+  background-color: #ffe065;
+  color: #112349;
+}
+ng-select::ng-deep .dropdown {
+  flex-direction: column;
+  border: 2px solid #efefef;
+  position: absolute;
+  top: 65px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+/*ng-select::ng-deep:hover .dropdown {*/
+  /*visibility: visible;*/
+  /*opacity: 1;*/
+/*}*/
+ng-select::ng-deep .dropdown:before {
+  content: "\A";
+  border-style: solid;
+  border-width: 0 10px 10px;
+  box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  top: -10px;
 }

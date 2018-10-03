@@ -73,13 +73,32 @@
           </a>
         </li>
       </ul>
-      <select name="" id="chose">
-        <option value="Tao Nightclub">Tao Nightclub</option>
-        <option value="Roku Bistro">Roku Bistro</option>
-        <option value="gilt">Gilt Nightclub</option>
-        <option value="Artisan Nightclub">Artisan Nightclub</option>
-        <option value="Fremont Social Club">Fremont Social Club</option>
-      </select>
+      <!--<select name="" id="chose">-->
+        <!--<option value="Tao Nightclub">Tao Nightclub</option>-->
+        <!--<option value="Roku Bistro">Roku Bistro</option>-->
+        <!--<option value="gilt">Gilt Nightclub</option>-->
+        <!--<option value="Artisan Nightclub">Artisan Nightclub</option>-->
+        <!--<option value="Fremont Social Club">Fremont Social Club</option>-->
+      <!--</select>-->
+
+      <ng-select [items]="clubs"
+                 bindLabel="name"
+                 bindValue="name"
+                 placeholder="Select club"
+                 [clearable]="false"
+                 [(ngModel)]="selectedClubName"
+                 class="dropdown">
+        <ng-template ng-label-tmp let-item="item">
+          <img height="22" width="40" [src]="item.avatar"/>
+          <b>{{item.name}}</b>
+        </ng-template>
+
+        <ng-template ng-option-tmp let-item="item" let-index="index">
+          <img height="22" width="40" [src]="item.avatar"/>
+          <b>{{item.name}}</b>
+        </ng-template>
+      </ng-select>
+
     </div>
   </div>
 </div>
