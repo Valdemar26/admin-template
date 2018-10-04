@@ -9,7 +9,7 @@
       <ul>
         <li>
           <a href="#">Events</a>
-          <ul class="dropdown">
+          <ul class="dropdown flex-grow-1">
             <li>
               <a href="#">Events 1</a>
             </li>
@@ -90,7 +90,7 @@
                  class="dropdown">
         <ng-template ng-label-tmp let-item="item">
           <img height="22" width="40" [src]="item.avatar"/>
-          <b>{{item.name}}</b>
+          <b style="padding-left: 5px;">{{item.name}}</b>
         </ng-template>
 
         <ng-template ng-option-tmp let-item="item" let-index="index">
